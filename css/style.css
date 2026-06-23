@@ -76,9 +76,30 @@ footer h4{margin-bottom:15px;color:var(--verde-menta)}
  .menu{display:none}
  .menu-toggle{display:block;background:none;border:none;font-size:1.5rem}
  .hero h1{font-size:2.2rem}
- .menu.active{
-  left: 0 !important;
-   }
+ .menu{
+  display:none;
+  position:absolute;
+  top:80px;
+  left:0;
+  width:100%;
+  background:#fff;
+  flex-direction:column;
+  padding:20px;
+  gap:20px;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.menu.active{
+  display:flex;
+}
+
+.menu-toggle{
+  display:block;
+  background:none;
+  border:none;
+  font-size:1.8rem;
+  cursor:pointer;
+}
   }
 
 /*blog*/
