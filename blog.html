@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Espacio Transpersonal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header igual al de index -->
+  <header id="header">
+    <nav class="container">
+      <a href="index.html" class="logo">Espacio Transpersonal</a>
+      <ul class="menu">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#servicios">Sesiones</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- Sección Blog -->
+  <section class="section bg-light">
+    <div class="container">
+      <h1 class="section-title">Artículos para tu crecimiento</h1>
+      <p class="section-subtitle">Reflexiones sobre terapia transpersonal, mindfulness y autoconocimiento</p>
+      
+      <div class="grid-3" id="blog-container">
+        <!-- JS carga los posts desde posts.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Espacio Transpersonal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

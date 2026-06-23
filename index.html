@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espacio Transpersonal - Terapias</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <nav class="container">
+      <a href="#" class="logo">Espacio Transpersonal</a>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Sesiones</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#turnos" class="btn-nav">Agendar</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h1>Saná desde tu interior</h1>
+      <p>Terapias transpersonales para conectar con tu esencia y transformar tu vida</p>
+      <a href="#turnos" class="btn btn-primary">Reservá tu turno</a>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <h2 class="section-title">Sesiones disponibles</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="icon">🌿</div>
+          <h3>Terapia Transpersonal</h3>
+          <p>Sesión individual para trabajar miedos, bloqueos y conectar con tu propósito.</p>
+        </div>
+        <div class="card">
+          <div class="icon">✨</div>
+          <h3>Registros Akáshicos</h3>
+          <p>Accedé a la información de tu alma para comprender tu camino actual.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🧘</div>
+          <h3>Meditación Guiada</h3>
+          <p>Espacio grupal para soltar el estrés y reconectar con la calma interior.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="section bg-light">
+    <div class="container grid-2">
+      <img src="img/foto-terapeuta.jpg" alt="Foto terapeuta" class="img-round">
+      <div>
+        <h2 class="section-title">Hola, soy [Nombre]</h2>
+        <p>Te acompaño hace 5 años en procesos de autoconocimiento y sanación. Mi enfoque transpersonal integra cuerpo, mente y espíritu para que puedas vivir con más plenitud.</p>
+        <a href="#turnos" class="btn btn-secondary">Conocé más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Preview -->
+  <section id="blog" class="section">
+    <div class="container">
+      <h2 class="section-title">Artículos para tu crecimiento</h2>
+      <div class="grid-3" id="blog-preview">
+        <!-- JS carga 3 posts desde posts.json -->
+      </div>
+      <div class="center">
+        <a href="blog.html" class="btn btn-outline">Ver todos los artículos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Turnos Google Calendar -->
+  <section id="turnos" class="section bg-menta">
+    <div class="container">
+      <h2 class="section-title white">Agendá tu sesión</h2>
+      <p class="white center">Elegí día y horario. Te llega confirmación por mail al instante.</p>
+      <div class="calendar-wrapper">
+        <!-- REEMPLAZÁ ESTE SRC por tu link de Google Calendar Citas -->
+        <iframe
+          src="https://calendar.google.com/calendar/u/0/appointments/schedules/AquiVaTuLink"
+          width="100%"
+          height="700"
+          frameborder="0">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container grid-3">
+      <div>
+        <h4>Espacio Transpersonal</h4>
+        <p>Córdoba, Argentina</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>WhatsApp: [tu número]</p>
+        <p>Email: [tu mail]</p>
+      </div>
+      <div>
+        <h4>Seguime</h4>
+        <p>Instagram | Facebook</p>
+      </div>
+    </div>
+    <p class="copy">© 2026 Espacio Transpersonal. Hecho con amor.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

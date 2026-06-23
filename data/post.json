@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Qué es la terapia transpersonal",
+    "extracto": "La terapia transpersonal va más allá de la mente y las emociones. Trabaja también el espíritu y la conexión con tu propósito.",
+    "imagen": "img/blog1.jpg",
+    "fecha": "22 Abril 2026",
+    "link": "post.html?id=1"
+  },
+  {
+    "id": 2,
+    "titulo": "3 ejercicios de respiración para calmar la ansiedad",
+    "extracto": "Te comparto técnicas simples que podés hacer en 5 minutos desde tu casa para volver al presente.",
+    "imagen": "img/blog2.jpg",
+    "fecha": "18 Abril 2026",
+    "link": "post.html?id=2"
+  },
+  {
+    "id": 3,
+    "titulo": "El poder de la meditación guiada",
+    "extracto": "Descubrí cómo 10 minutos al día pueden transformar tu relación con el estrés y con vos misma/o.",
+    "imagen": "img/blog3.jpg",
+    "fecha": "15 Abril 2026",
+    "link": "post.html?id=3"
+  }
+]
