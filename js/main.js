@@ -52,3 +52,26 @@ if(document.getElementById('blog-container')){
       `).join('');
     });
 }
+
+// Efecto reveal al hacer scroll
+const revealElements = document.querySelectorAll(
+  '.section-title, .card, .grid-2 img, .grid-2 div, .calendar-wrapper'
+);
+
+revealElements.forEach(el => {
+  el.classList.add('reveal');
+});
+
+function revealOnScroll() {
+  revealElements.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (elementTop < windowHeight - 80) {
+      el.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
