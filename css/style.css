@@ -225,7 +225,7 @@ header.scrolled {
   }
 
   .calendar-wrapper iframe{
-    height: 650px;
+    height: 750px;
     border-radius: 14px;
   }
 }
