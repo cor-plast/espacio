@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artículo | Espacio Transpersonal</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Espacio Transpersonal</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <main class="article-wrap">
+    <a class="back-link" href="blog.html">← Volver al blog</a>
+    <article id="article" class="article"></article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Espacio Transpersonal</p>
+  </footer>
+
+  <script src="assets/markdown.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const file = params.get('articulo') || 'ansiedad.md';
+
+    fetch(`articulos/${file}`)
+      .then(response => {
+        if (!response.ok) throw new Error('No se pudo cargar el artículo');
+        return response.text();
+      })
+      .then(markdown => {
+        const article = document.getElementById('article');
+        const { meta, body } = parseFrontMatter(markdown);
+
+        document.title = `${meta.titulo || 'Artículo'} | Espacio Transpersonal`;
+
+        article.innerHTML = `
+          <header class="article-header">
+            <p class="post-date">${meta.fecha || ''}</p>
+            <h1>${meta.titulo || ''}</h1>
+            <p class="article-description">${meta.descripcion || ''}</p>
+          </header>
+          ${renderMarkdown(body)}
+        `;
+      })
+      .catch(() => {
+        document.getElementById('article').innerHTML = '<h1>Artículo no encontrado</h1><p>Verificá que el archivo exista en la carpeta articulos.</p>';
+      });
+  </script>
+</body>
+</html>
