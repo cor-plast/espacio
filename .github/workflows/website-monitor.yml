@@ -1,1 +1,30 @@
+name: Website Monitor
 
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check website
+        run: |
+          URLS=(
+            "https://tudominio.com/"
+            "https://tudominio.com/blog/"
+            "https://tudominio.com/contacto/"
+          )
+
+          for URL in "${URLS[@]}"; do
+            STATUS=$(curl -L -o /dev/null -s -w "%{http_code}" --max-time 15 "$URL")
+
+            echo "$URL → Estado: $STATUS"
+
+            if [ "$STATUS" -lt 200 ] || [ "$STATUS" -ge 400 ]; then
+              echo "Error: $URL respondió con código $STATUS"
+              exit 1
+            fi
+          done
