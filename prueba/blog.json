@@ -5,7 +5,7 @@
     "descripcion": "Una mirada transpersonal sobre la ansiedad, con ejercicios simples para volver al cuerpo.",
     "fecha": "1 de julio de 2026",
     "url": "ansiedad-y-calma-interior.html",
-    "imagen": "../img/ansiedad.jpg"
+    "imagen": "assets/img/ansiedad.jpg"
   },
   {
     "titulo": "Mindfulness cotidiano",
@@ -13,6 +13,6 @@
     "descripcion": "Prácticas breves para integrar presencia y calma en la vida diaria.",
     "fecha": "2 de julio de 2026",
     "url": "mindfulness-cotidiano.html",
-    "imagen": "../img/mind.jpeg"
+    "imagen": "assets/img/mind.jpeg"
   }
 ]
